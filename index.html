@@ -1,42 +1,109 @@
 <!DOCTYPE html>
-<html>
- <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mi pagina web</title>
- </head>
+<html lang="es">
 
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Israel Díaz Ruiz</title>
 
+    <link rel="stylesheet" href="Estilos.css">
+
+</head>
+
+<body>
+    <div class="cv-container">
         <header>
-            <section class="nombre_isra">
-                <h1>Hola Mundo</h1>
-                <p>Bienvenidos a mi pagina web</p>
-            </section>
-
-            <nav>
-                <ul>
-                    <li><a href="#experiencia">Inicio</a></li>
-                    <li><a href="#educacion">Acerca de</a></li>
-                    <li><a href="#skills">Contacto</a></li>
-                </ul>
-            </nav>
-
+            <h1>Israel Díaz Ruiz</h1>
+            <p class="subtitle">Ingeniero en Inteligencia Artificial</p>
         </header>
 
-        <main>
-            <section id="experiencia">
-                <h2>Experiencia</h2>
-                <p>Mi experiencia laboral incluye...</p>
-            </section>
+        <main class="main-content">
+            <div class="primary-column">
+                <section id="educacion">
+                    <h2>Educación</h2>
+                    <div class="item">
+                        <div class="item-header">
+                            <span class="item-title">Escuela Nacional de Cómputo [ESCOM]</span>
+                            <span class="item-date">Ago 2022 – Jul 2026</span>
+                        </div>
+                        <span class="item-sub">IPN</span>
+                        <p class="item-desc">Enfoque colaborativo en el análisis, diseño, implementación y gestión de
+                            sistemas inteligentes. Aplicación de algoritmos en aprendizaje de máquina, NLP, visión
+                            artificial y modelos bioinspirados.</p>
+                    </div>
 
-            <section id="educacion">
-                <h2>Educación</h2>
-                <p>Mi educación incluye...</p>
-            </section>
+                    <div class="item">
+                        <div class="item-header">
+                            <span class="item-title">Samsung Innovation Campus</span>
+                            <span class="item-date">Nov 2024 – Mar 2025</span>
+                        </div>
+                        <p class="item-desc">Curso avanzado sobre análisis de datos, IA, Machine Learning, Redes
+                            Neuronales y Deep Learning.</p>
+                    </div>
+                </section>
 
-            <section id="skills">
-                <h2>Habilidades</h2>
-                <p>Mis habilidades incluyen...</p>
-            </section>
+                <section id="experiencia">
+                    <h2>Experiencia Profesional</h2>
+                    <div class="item">
+                        <div class="item-header">
+                            <span class="item-title">Sistema Interactivo de Navegación VR</span>
+                            <span class="item-date">Abril 2025 - Nov 2025</span>
+                        </div>
+                        <span class="item-sub">Proyecto de Realidad Virtual basado en Caminadora</span>
+                        <p class="item-desc">Vinculación del movimiento físico del usuario con entornos virtuales
+                            mediante sensores infrarrojos y capacitivos para una navegación continua inmersiva.</p>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-header">
+                            <span class="item-title">Plataforma E-learning y Agente IA</span>
+                            <span class="item-date">Julio 2025 – Dic 2025</span>
+                        </div>
+                        <span class="item-sub">Empresa Ecos de Liderazgo</span>
+                        <p class="item-desc">Desarrollo de una web de e-learning para enseñanza de herramientas de IA
+                            usando React y Next.js. Implementación de un agente inteligente para el seguimiento
+                            personalizado del aprendizaje del usuario.</p>
+                    </div>
+                </section>
+                <section id="contacto">
+                    <h2>Contacto</h2>
+                    <div class="contact-info">
+                        <p><strong>Tel:</strong> (+52) 5621529459</p>
+                        <p><strong>Email:</strong> <a href="mailto:Isri.alfa@gmail.com">Isri.alfa@gmail.com</a></p>
+                        <p><strong>GitHub:</strong><br><a href="https://github.com/REMOTEpine12" class="github-link"
+                                target="_blank">@REMOTEpine12</a></p>
+                    </div>
+                </section>
+
+                <section id="aptitudes">
+                    <h2>Aptitudes</h2>
+                    <ul class="skills">
+                        <li>
+                            <strong>Python</strong>
+                            <span>Desarrollo de algoritmos (1 año)</span>
+                        </li>
+                        <li>
+                            <strong>Desarrollo Web</strong>
+                            <span>React, Next.js, Supabase, SQLite</span>
+                        </li>
+                        <li>
+                            <strong>Contenido Audiovisual</strong>
+                            <span>HeyGen, edición de video y voces</span>
+                        </li>
+                        <li>
+                            <strong>Sistemas Operativos</strong>
+                            <span>Linux y Windows (Virtualización)</span>
+                        </li>
+                        <li>
+                            <strong>Idiomas</strong>
+                            <span>Inglés B2</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+
+    </div>
+</body>
+
 </html>
