@@ -1,0 +1,52 @@
+/*
+Para backgroud-color: #F4F2F3
+Para titulos y subitulos: Color:#64766A
+Para texto: Color: #94A7AE
+para fondos de secciiones y tarjetas: Color: #C0A9BD 
+
+*/
+* {
+   box-sizing: border-box;
+   
+}
+
+body {
+    background-color: #f4f2f3;
+}
+
+.titulo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    color: #f4f2f3;
+    background-color: #94A7AE;
+
+}
+
+#encabezado1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    background-color: #94A7AE;
+    color: #64766A;
+    text-align: center;
+    
+}
+
+.index {
+    display: flex;
+    justify-content: space-around;
+    background-color: #94A7AE;
+    padding: 10px;
+}
+
+.indexItem {
+    display: inline-block;
+}
+
+.indexItem a::before {
+    display: inline-block;
+    color: black;
+    content: "*";
+    padding-left: 20px;
+    font-size: 80%;
+    font-weight: bold;
+}
