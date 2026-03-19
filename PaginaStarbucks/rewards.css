@@ -1,3 +1,10 @@
+:root {
+  --titulo_A: "Archivo Black", sans-serif;
+  --color_principal: #0e6147;
+}
+
+
+
 body {
     min-height: 100vh;
     margin: 0;
@@ -8,7 +15,6 @@ body {
 .fit-picture {
     width: 175px;
     border-radius: 20px;
-     
     
 }
 
@@ -191,7 +197,7 @@ header {
 }
 
 .greencontainer {
-  background-color: rgb(29, 91, 47);
+  background-color: var(--color_principal);
   width: 40%;
   height: 100%;
   top: 0;
@@ -204,10 +210,19 @@ header {
 
 .minicont {
   position: sticky;
-  background-color: white;
+  
   width: 80%;
   height: 8%;
   margin: 10px auto;
+}
+
+#Titulo {
+  color: white ;
+  background-color: black;
+  font-family: var(--titulo_A);
+  font-size: 40px;
+  justify-content: center;
+  
 }
 
 
