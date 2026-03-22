@@ -6,10 +6,12 @@
 
 
 body {
-    min-height: 100vh;
+    height: 100vh;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    
+
 }
 
 .fit-picture {
@@ -189,10 +191,9 @@ header {
 .principal {
     display: flex;
     width: 100%;
-    height: 100%;
-    flex-direction: row;
     height: calc(100vh - 100px);
-    overflow: hidden; /*Esto es para evitar scrool*/
+    flex-direction: row;
+    overflow: visible; /*Esto es para evitar scrool*/
     
 }
 
@@ -303,12 +304,25 @@ header {
   width: 60%;
   height: 100%;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Esto es para probar el scroll de dos pantallas*/
-.maincontainer::before {
+/*.maincontainer::before {
   height: 200vh;
-  content: "";
-  display: block;
+  
+}¨*/
+
+.card {
+  border: solid 1px black;
+  width: 100%;
 }
 
+#beneficios {
+  height: 1000px;
+}
+
+#recompensas {
+  height: 600px;
+}
