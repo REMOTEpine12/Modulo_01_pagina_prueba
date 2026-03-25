@@ -330,16 +330,13 @@ header {
 }
 
 #beneficios {
-  min-height: 700px;
+  min-height: 900px;
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: center;
 }
 
-#recompensas {
-  height: 600px;
-}
 
 #parrafo1 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -347,6 +344,7 @@ header {
   height: 80px;
   width: 100%;
   text-align: center;
+  padding-top: 20px;
 }
 
 #Negritas {
@@ -364,6 +362,59 @@ header {
 .tablas {
   height: 200px;
   width: 100%;
-  background-color: red;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 130px 60px;
+  grid-gap: 10px;
+  background-color: white; 
+  justify-content: space-around; 
+  padding-top: 20px;
+  
+}
+
+.caja {
+  
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.mini_iconos {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+
+
+#recompensas {
+  height: 600px;
+  background-color: antiquewhite;
+  display: grid;
+  grid-template-rows: 60px 170px;
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.caja2 {
+  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+#A3 {
+  font-weight: bold;
   
 }
