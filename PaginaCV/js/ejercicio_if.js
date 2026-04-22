@@ -13,14 +13,14 @@ notas = [92, 77, 66, 55]
 
 
 for (let index = 0; index < notas.length; index++) {
-    if (notas[index] > 90) {
-        console.log(notas[index] + "Tu calficación es Excelente")
-    } else if( 89 >= notas[index] >= 75){ 
-        console.log(notas[index] + "Tu calificación esta Bien")
-    } else if (74 >= notas[index] >= 60){
-        console.log(notas[index] + "Tu calificación es Suficiente")
-    } else  {
-        console.log(notas[index] + "Tu no apruebas este curso")
+    if (notas[index] >= 90) {
+        console.log(notas[index] + "  Tu calificación es Excelente")
+    } else if (notas[index] >= 75 && notas[index] < 90) { 
+        console.log(notas[index] + "  Tu calificación está Bien")
+    } else if (notas[index] >= 60 && notas[index] < 75) {
+        console.log(notas[index] + "  Tu calificación es Suficiente")
+    } else {
+        console.log(notas[index] + "  No apruebas este curso")
     }
     
 }
