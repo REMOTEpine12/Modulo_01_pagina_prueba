@@ -24,3 +24,26 @@ for (let index = 0; index < notas.length; index++) {
     }
     
 }
+
+/*
+
+1. Crea un ciclo while que cuente del 10 al 1 y lo imprima en la consola.
+
+2. Modifica el ciclo para que imprima solo los números pares.
+*/
+
+let index = 10
+
+while (index >= 1) {
+    console.log(index)
+    index--
+}
+
+index = 10
+
+while (index >= 1) {
+    if (index % 2 === 0) {
+        console.log(index)
+    }
+    index--
+}
