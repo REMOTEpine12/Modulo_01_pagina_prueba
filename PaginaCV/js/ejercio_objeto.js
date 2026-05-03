@@ -13,3 +13,25 @@ Opcional: agregar una propiedad que contenga la lista de capítulos del libro y 
 */
 
 
+const libro = {
+    titulo: "Los Cronopolios",
+    autor: "Luis Panini",
+    anio: 2016,
+    estado: "disponible", //prestado o disponible
+    describirLibro: function() {
+        console.log(`Libro titulado ${this.titulo}, escrito por ${this.autor} en el año ${this.anio}, el estado es: ${this.estado}.`);
+    },
+    capitulos: ["Las espirales del tiempo", "la oscuridad paralela", "La noche infinita"],
+    agregarCap: function(capitulo) {
+        this.capitulos.push(capitulo);
+    },
+    eliminarCap: function(capitulo) {
+        const index = this.capitulos.indexOf(capitulo);
+        if (index > -1) {
+            this.capitulos.splice(index, 1);
+        }
+    }
+};
+
+
+libro.describirLibro();
