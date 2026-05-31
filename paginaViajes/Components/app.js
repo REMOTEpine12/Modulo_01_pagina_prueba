@@ -1,12 +1,11 @@
-// Iniciar la aplicación
-function iniciarApp() {
-    // Ejemplo de cómo registrar destinos
-    registrarDestino("Paris", "2024-06-15", "Avión");
-    registrarDestino("Londres", "2024-07-01", "Tren");
+import { Viaje } from "./viajes.js";
 
-    // Mostrar el itinerario de los viajes
-    mostrarItinerario();
-}
+const Viaje1 = new Viaje("Paris", "2024-06-15", "Avión");
+const Viaje2 = new Viaje("Londres", "2024-07-01", "Tren");
 
-// Ejecutar la aplicación
-iniciarApp();
+Viaje1.calcularCosto(Viaje1.destino, Viaje1.transporte);
+Viaje2.calcularCosto(Viaje2.destino, Viaje2.transporte);
+
+Viaje1.MostrarItinerario();
+Viaje2.MostrarItinerario();
+

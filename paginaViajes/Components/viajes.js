@@ -30,13 +30,11 @@ class Viaje {
     }
 
     // Función para mostrar el itinerario de los viajes registrados
-    MostrarItinerario(Viaje) {
-        for (let i = 0; i < Viaje.length; i++) {
-            console.log("Destino: " + Viaje[i].destino);
-            console.log("Fecha: " + Viaje[i].fecha);
-            console.log("Transporte: " + Viaje[i].transporte);
-            console.log("---------------------------");
-        }
+    MostrarItinerario() {
+        console.log("Itinerario del viaje:");
+        console.log("Destino: " + this.destino);
+        console.log("Fecha: " + this.fecha);
+        console.log("Transporte: " + this.transporte);
 
     }
 
