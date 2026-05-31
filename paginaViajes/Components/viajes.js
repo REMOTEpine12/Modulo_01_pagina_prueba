@@ -1,4 +1,4 @@
-
+export { Viaje };
 // Clase Viaje para gestionar los viajes registrados
 class Viaje {
     // el constructor actua como la función para registrar un destino
